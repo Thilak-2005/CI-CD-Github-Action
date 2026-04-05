@@ -11,7 +11,6 @@ This project demonstrates a complete **CI/CD pipeline** where application change
 ```
 Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → LoadBalancer → Users
 ```
-
 ---
 
 ## Tech Stack
@@ -42,12 +41,15 @@ Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → L
 ## EKS Cluster Creation (Terminal)
 ![](EKSclustercreationterminal.png)
 
+## EKS URL
+![](EKSurl.png)
+
 ## Kubernetes Deployment 
 ![](deployment.png)
 
-![](deployment1.png
-)
-## 🚀 CI/CD Workflow
+![](deployment1.png)
+
+## CI/CD Workflow
 
 1. Developer pushes code to GitHub
 2. GitHub Actions pipeline triggers
@@ -57,29 +59,12 @@ Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → L
 6. Application is exposed via LoadBalancer
 
 
-### 🔹 3. LoadBalancer Output
+## Before CICD done
 
 ![](Aftercicd.png)
 
-### 🔹 4. Application Output in Browser
+## After CICD done
 
-![App Screenshot](screenshots/app.png)
-
----
-
-## 🔐 Security Note
-
-* AWS credentials are stored securely using GitHub Secrets
-* No sensitive data is hardcoded in the repository
+![](beforecicdaction.png)
 
 ---
-
-## 🧠 Key Learnings
-
-* End-to-end CI/CD pipeline implementation
-* Docker containerization
-* Kubernetes deployment on AWS EKS
-* Automated deployment using GitHub Actions
-
----
-
