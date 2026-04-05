@@ -7,7 +7,7 @@ This project demonstrates a complete **CI/CD pipeline** where application change
 ---
 
 ## Architecture
-
+![](aws_eks_architecture.svg)
 ```
 Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → LoadBalancer → Users
 ```
@@ -44,6 +44,17 @@ cicd-project/
 ```
 
 ---
+## GitHub Actions Pipeline
+![](Githubaction.png)
+
+## Docker Build
+![](appdocker.png)
+
+## Docker Container Running
+![](Dockerfile.png)
+
+## AWS ECR Repository
+![](ECRregistry.png)
 
 ## 🚀 CI/CD Workflow
 
