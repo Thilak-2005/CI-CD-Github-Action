@@ -56,52 +56,10 @@ Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → L
 5. Kubernetes deployment is updated in EKS
 6. Application is exposed via LoadBalancer
 
----
-
-## 🐳 Docker Build & Push
-
-```bash
-docker build -t cicd-app ./app
-docker tag cicd-app:latest <ECR_URI>:latest
-docker push <ECR_URI>:latest
-```
-
----
-
-## ☸️ Kubernetes Deployment
-
-```bash
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
-```
-
----
-
-## 🌍 Access Application
-
-```bash
-kubectl get svc
-```
-
-Open in browser:
-
-```
-http://<EXTERNAL-IP>
-```
-
-## 📸 Screenshots
-
-### 🔹 1. GitHub Actions Pipeline
-
-![Pipeline Screenshot](screenshots/pipeline.png)
-
-### 🔹 2. EKS Pods Running
-
-![Pods Screenshot](screenshots/pods.png)
 
 ### 🔹 3. LoadBalancer Output
 
-![Service Screenshot](screenshots/service.png)
+![](Aftercicd.png)
 
 ### 🔹 4. Application Output in Browser
 
