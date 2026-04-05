@@ -9,7 +9,6 @@ This project demonstrates a complete **CI/CD pipeline** where application change
 ## Architecture
 ![](aws_eks_architecture.svg)
 ```
-Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → LoadBalancer → Users
 ```
 ---
 
