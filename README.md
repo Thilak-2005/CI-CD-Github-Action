@@ -23,26 +23,6 @@ Developer → GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → L
 * **Language**: Python (Flask)
 
 ---
-
-## Project Structure
-
-```
-cicd-project/
-│
-├── app/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── Dockerfile
-│
-├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
-│
-└── .github/
-    └── workflows/
-        └── deploy.yml
-```
-
 ---
 ## GitHub Actions Pipeline
 ![](Githubaction.png)
@@ -56,6 +36,17 @@ cicd-project/
 ## AWS ECR Repository
 ![](ECRregistry.png)
 
+## EKS Cluster
+![](EKScluster.png)
+
+## EKS Cluster Creation (Terminal)
+![](EKSclustercreationterminal.png)
+
+## Kubernetes Deployment 
+![](deployment.png)
+
+![](deployment1.png
+)
 ## 🚀 CI/CD Workflow
 
 1. Developer pushes code to GitHub
@@ -97,24 +88,6 @@ Open in browser:
 ```
 http://<EXTERNAL-IP>
 ```
-
----
-
-## 🧪 CI/CD Test
-
-1. Modify `app.py`
-2. Push changes:
-
-```bash
-git add .
-git commit -m "update"
-git push
-```
-
-3. Pipeline runs automatically
-4. Application updates in real-time
-
----
 
 ## 📸 Screenshots
 
